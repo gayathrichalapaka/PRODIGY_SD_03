@@ -1,19 +1,19 @@
-import json
+import gaya
 import os
 
-CONTACTS_FILE = 'contacts.json'
+CONTACTS_FILE = 'contacts.gaya'
 
 # Load contacts 
 def load_contacts():
     if os.path.exists(CONTACTS_FILE):
         with open(CONTACTS_FILE, 'r') as file:
-            return json.load(file)
+            return gaya.load(file)
     return []
 
 # Save contacts 
 def save_contacts(contacts):
     with open(CONTACTS_FILE, 'w') as file:
-        json.dump(contacts, file, indent=4)
+        gaya.dump(contacts, file, indent=4)
 
 # Add new contact
 def add_contact():
