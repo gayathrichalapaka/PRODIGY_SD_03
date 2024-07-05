@@ -23,6 +23,7 @@ Python 3.x
 1.Run the ```contact_management_system.py``` script using Python:
 
 ```python contact_management_system.py```
+
 2.Follow the on-screen menu to manage your contacts:
 
 1. Add Contact: Add a new contact by entering the name, phone number, and email address.
